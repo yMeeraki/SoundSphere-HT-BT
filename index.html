@@ -5,39 +5,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
    
+     <!-- 
+      Added Bootstrap
+     -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+   />
+
   </head>
   <body>
-   <!-- 
+ 
+    <!-- 
      Header
     -->
-    <header>
+    <header class="navbar navbar-expand-lg bg-info bg-gradient bg-opacity-50">
+      <div class="container">
       <h1>
-        <a href="index.html">SoundSphere</a>
+        <a href="index.html" class="navbar-brand">SoundSphere</a>
       </h1>
 
       <!-- 
+        Toggle Button
+       -->
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- 
         Navigation Bar
        -->
-       <nav>
-        <li>
-          <a href="/">Home</a>
+       
+       <nav class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a href="/"
+          class="nav-link link-underline-opacity-100-hover">Home</a>
         </li>
-        <li>
-          <a href="genres.html">Genres</a>
+        <li class="nav-item dropdown">
+          <a href="genres.html"
+          class="nav-link dropdown-toggle link-underline-opacity-100-hover" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+          >Genres</a>
+          <ul class="dropdown-menu" >
+            <li>
+              <a href="genres-detail.html?name=rock"
+              class="dropdown-item link-underline-opacity-100-hover">Rock</a>
+            </li>
+            <li>
+              <a href="genres-detail.html?name=jazz"
+              class="dropdown-item link-underline-opacity-100-hover">Jazz</a>
+            </li>
+            <li><a href="genres-detail.html?name=pop"
+              class="dropdown-item link-underline-opacity-100-hover">Pop</a></li>
+            <li><a href="genres-detail.html?name=classical"
+              class="dropdown-item link-underline-opacity-100-hover">Classical</a></li>
+          </ul>
         </li>
-        <li>
-          <a href="history.html">History</a>
+        <li class="nav-item">
+          <a href="history.html"
+          class="nav-link link-underline-opacity-100-hover">History</a>
+        </ul>
        </nav>
+      </div>
 
-       <main>
-        <article>
-        <h2>Welcome to SoundSphere</h2>
-          <img src="https://placehold.co/600x400?text=SoundSphere" alt="SoundSphere">
-          <p>Explore the world of music with us! From timeless classics to modern hits, dive into various genres, discover their rich histories, and enjoy curated playlists.</p>
+      </header>
+
+       <main >
+        <div  class = 'container'>
+        <article class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <section class="col-10 col-sm-8 col-lg-6">
+          <img class="border rounded d-block mx-lg-auto img-fluid" width="700" height="700" src="https://placehold.co/600x400?text=SoundSphere" alt="SoundSphere">
+          </section>
+          <div class="align-self-center col-lg-6">
+            <h2>Welcome to SoundSphere</h2>
+            <p>Explore the world of music with us! From timeless classics to modern hits, dive into various genres, discover their rich histories, and enjoy curated playlists.</p>
+          </div>
         </article>
+        
+       
+      </div>
 
-        <article>
-          <h2>Featured Genres</h2>
+        <article class="card py-1">
+          <h2 class="card-header bg-info bg-gradient bg-opacity-25 text-center ">Featured Genres</h2>
         <ul>
           <li>
             <a href="genres-detail.html?name=rock">Rock</a>
@@ -45,7 +94,7 @@
           <li>
             <a href="genres-detail.html?name=jazz">Jazz</a>
           </li>
-         <a href="genres.html">Explore More</a>
+         <a href="genres.html" class="btn">Explore More</a>
         </article>
 
 
@@ -58,8 +107,15 @@
       </main>
 
 
-      <footer>
+      <footer class="bg-info bg-gradient bg-opacity-10 py-4 container-fluid">
         <p>&copy; 2025 SoundSphere</p>
       </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"></script>
+
+
+
   </body>
 </html>
