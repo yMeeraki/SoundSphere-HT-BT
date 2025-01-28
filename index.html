@@ -19,62 +19,67 @@
     <!-- 
      Header
     -->
-    <header class="navbar navbar-expand-lg bg-info bg-gradient bg-opacity-50">
-      <div class="container">
-      <h1>
-        <a href="index.html" class="navbar-brand">SoundSphere</a>
-      </h1>
+    <header >
+       <nav class="navbar navbar-expand-lg bg-info bg-gradient bg-opacity-50">
+          <div class="container">
+            <a href="index.html" class="navbar-brand">SoundSphere</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Genres
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="genres-detail.html?name=rock"
+                      class="dropdown-item link-underline-opacity-100-hover">Rock</a>
+                    </li>
 
-      <!-- 
-        Toggle Button
-       -->
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <!-- 
-        Navigation Bar
-       -->
-       
-       <nav class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-        <li class="nav-item">
-          <a href="/"
-          class="nav-link link-underline-opacity-100-hover">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a href="genres.html"
-          class="nav-link dropdown-toggle link-underline-opacity-100-hover" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-          >Genres</a>
-          <ul class="dropdown-menu" >
-            <li>
-              <a href="genres-detail.html?name=rock"
-              class="dropdown-item link-underline-opacity-100-hover">Rock</a>
-            </li>
-            <li>
-              <a href="genres-detail.html?name=jazz"
-              class="dropdown-item link-underline-opacity-100-hover">Jazz</a>
-            </li>
-            <li><a href="genres-detail.html?name=pop"
-              class="dropdown-item link-underline-opacity-100-hover">Pop</a></li>
-            <li><a href="genres-detail.html?name=classical"
-              class="dropdown-item link-underline-opacity-100-hover">Classical</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="history.html"
-          class="nav-link link-underline-opacity-100-hover">History</a>
-        </ul>
-       </nav>
-      </div>
+                    <li><hr class="dropdown-divider"></li>
+
+                    <li>
+                      <a href="genres-detail.html?name=jazz"
+                      class="dropdown-item link-underline-opacity-100-hover">Jazz</a>
+                    </li>
+
+                    <li><hr class="dropdown-divider"></li>
+
+
+                    <li><a href="genres-detail.html?name=pop"
+                      class="dropdown-item link-underline-opacity-100-hover">Pop</a></li>
+
+                      <li><hr class="dropdown-divider"></li>
+
+                    <li><a href="genres-detail.html?name=classical"
+                      class="dropdown-item link-underline-opacity-100-hover">Classical</a></li>
+                    
+                    
+                      
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="history.html" >History</a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </nav>
 
       </header>
-
-       <main >
-        <div  class = 'container'>
-        <article class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <section class="col-10 col-sm-8 col-lg-6">
-          <img class="border rounded d-block mx-lg-auto img-fluid" width="700" height="700" src="https://placehold.co/600x400?text=SoundSphere" alt="SoundSphere">
+   
+       <main class = 'container'>
+        <div  >
+        <article class="row align-items-center g-5 py-5">
+          <section class="col-10 col-sm-8 col-lg-6s">
+          <img class="border rounded d-block mx-lg-auto img-fluid"  src="https://placehold.co/600x400?text=SoundSphere" alt="SoundSphere">
           </section>
           <div class="align-self-center col-lg-6">
             <h2 class="text-body-secondary">Welcome to SoundSphere</h2>
@@ -85,29 +90,50 @@
        
       </div>
 
-        <article class="card bg-info bg-gradient bg-opacity-25">
-         <div class="card-body  text-center text-primary-emphasis ">
-          <h2 class="card-title  py-1">Featured Genres</h2>
+      <article class="card bg-info bg-gradient bg-opacity-25">
+        <div class="card-body text-center text-primary-emphasis">
+          <h2 class="card-title">Featured Genres</h2>
           
-          <ul class="list-group list-group-horizontal-md">
-            <li class="list-group-item list-group-item list-group-item-action ">
-              <img src="https://placehold.co/200x200?text=Rock" alt="Rock" class="card-img" style="width: 200px">
-              <a href="genres-detail.html?name=rock" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Rock</a>
-            </li>
-            <li class="list-group-item list-group-item list-group-item-action">
-              <img src="https://placehold.co/200x200?text=Jazz" alt="Jazz" class="card-img" style="width: 200px">
-              <a href="genres-detail.html?name=jazz" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Jazz</a>
-            </li>
-            <li class="list-group-item list-group-item list-group-item-action">
-              <img src="https://placehold.co/200x200?text=Pop" alt="Pop" class="card-img" style="width: 200px">
-              <a href="genres-detail.html?name=pop" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Pop</a></li>
-              <li class="list-group-item list-group-item list-group-item-action">
-                <img src="https://placehold.co/200x200?text=Classical" alt="Classical" class="card-img" style="width: 200px">
-          <a href="genres-detail.html?name=classical" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Classical</a></li>
-          </ul>
-         </div>
-        
-        </article>
+          <div class="row g-2">
+            <div class="col-6 col-md-3">
+              <div class="card border-0">
+                <img src="https://placehold.co/200x200?text=Rock" alt="Rock" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <a href="genres-detail.html?name=rock" class="link-dark link-underline-opacity-100-hover">Rock</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-6 col-md-3">
+              <div class="card border-0">
+                <img src="https://placehold.co/200x200?text=Jazz" alt="Jazz" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <a href="genres-detail.html?name=jazz" class="link-dark link-underline-opacity-100-hover">Jazz</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-6 col-md-3">
+              <div class="card border-0">
+                <img src="https://placehold.co/200x200?text=Pop" alt="Pop" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <a href="genres-detail.html?name=pop" class="link-dark link-underline-opacity-100-hover">Pop</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-6 col-md-3">
+              <div class="card border-0">
+                <img src="https://placehold.co/200x200?text=Classical" alt="Classical" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <a href="genres-detail.html?name=classical" class="link-dark link-underline-opacity-100-hover">Classical</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      
 
 
         <article class="text-center py-5">

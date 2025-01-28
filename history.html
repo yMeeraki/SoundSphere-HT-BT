@@ -19,56 +19,58 @@
     <!-- 
      Header
     -->
-    <header class="navbar navbar-expand-lg bg-info bg-gradient bg-opacity-50">
-      <div class="container">
-      <h1>
+    <nav class="navbar navbar-expand-lg bg-info bg-gradient bg-opacity-50">
+      <div class="container-fluid">
         <a href="index.html" class="navbar-brand">SoundSphere</a>
-      </h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Genres
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="genres-detail.html?name=rock"
+                  class="dropdown-item link-underline-opacity-100-hover">Rock</a>
+                </li>
 
-      <!-- 
-        Toggle Button
-       -->
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <!-- 
-        Navigation Bar
-       -->
-       
-       <nav class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-        <li class="nav-item">
-          <a href="/"
-          class="nav-link link-underline-opacity-100-hover">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a href="genres.html"
-          class="nav-link dropdown-toggle link-underline-opacity-100-hover" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-          >Genres</a>
-          <ul class="dropdown-menu" >
-            <li>
-              <a href="genres-detail.html?name=rock"
-              class="dropdown-item link-underline-opacity-100-hover">Rock</a>
+                <li><hr class="dropdown-divider"></li>
+
+                <li>
+                  <a href="genres-detail.html?name=jazz"
+                  class="dropdown-item link-underline-opacity-100-hover">Jazz</a>
+                </li>
+
+                <li><hr class="dropdown-divider"></li>
+
+
+                <li><a href="genres-detail.html?name=pop"
+                  class="dropdown-item link-underline-opacity-100-hover">Pop</a></li>
+
+                  <li><hr class="dropdown-divider"></li>
+
+                <li><a href="genres-detail.html?name=classical"
+                  class="dropdown-item link-underline-opacity-100-hover">Classical</a></li>
+                
+                
+                  
+              </ul>
             </li>
-            <li>
-              <a href="genres-detail.html?name=jazz"
-              class="dropdown-item link-underline-opacity-100-hover">Jazz</a>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html" >History</a>
             </li>
-            <li><a href="genres-detail.html?name=pop"
-              class="dropdown-item link-underline-opacity-100-hover">Pop</a></li>
-            <li><a href="genres-detail.html?name=classical"
-              class="dropdown-item link-underline-opacity-100-hover">Classical</a></li>
           </ul>
-        </li>
-        <li class="nav-item">
-          <a href="history.html"
-          class="nav-link link-underline-opacity-100-hover">History</a>
-        </ul>
-       </nav>
-      </div>
 
-      </header>
+        </div>
+      </div>
+    </nav>
 
 
       <!-- 
@@ -80,85 +82,78 @@
         <div class="container mt-4">
             <!-- Ancient & Medieval Music (Pre-1400s) -->
             <div class="mb-3">
-                <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#ancientMusic" 
-                    aria-expanded="false" aria-controls="ancientMusic">
+                <a class="btn btn-info">
                     Ancient & Medieval Music (Pre-1400s)
-                </button>
-                <div class="collapse mt-2" id="ancientMusic">
+                </a>
+                
                     <div class="card card-body">
                         <p>Music was primarily vocal, used in rituals and religious ceremonies.</p>
                         <p>Instruments like the lyre, flute, and drums were common.</p>
-                    </div>
+                    
                 </div>
             </div>
         
             <!-- Renaissance Music (1400s-1600s) -->
             <div class="mb-3">
-                <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#renaissanceMusic" 
-                    aria-expanded="false" aria-controls="renaissanceMusic">
+                <a class="btn btn-info" >
                     Renaissance Music (1400s-1600s)
-                </button>
-                <div class="collapse mt-2" id="renaissanceMusic">
+                </a>
+                
                     <div class="card card-body">
                         <p>Polyphony became popular, with multiple independent melodies played together.</p>
                         <p>Composers like Palestrina and Monteverdi pioneered harmonic advancements.</p>
                     </div>
-                </div>
+                
             </div>
         
             <!-- Baroque Music (1600s-1750s) -->
             <div class="mb-3">
-                <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#baroqueMusic" 
-                    aria-expanded="false" aria-controls="baroqueMusic">
+                <a class="btn btn-info" >
                     Baroque Music (1600s-1750s)
-                </button>
-                <div class="collapse mt-2" id="baroqueMusic">
+                </a>
+            
                     <div class="card card-body">
                         <p>Ornate melodies and complex compositions characterized this era.</p>
                         <p>Bach, Vivaldi, and Handel were major composers.</p>
                     </div>
-                </div>
+                
             </div>
         
             <!-- Classical Music (1750s-1820s) -->
             <div class="mb-3">
-                <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#classicalMusic" 
-                    aria-expanded="false" aria-controls="classicalMusic">
+              <a class="btn btn-info" >
                     Classical Music (1750s-1820s)
-                </button>
-                <div class="collapse mt-2" id="classicalMusic">
+              </a>
+                
                     <div class="card card-body">
                         <p>Emphasis on clarity, balance, and structured forms like sonatas and symphonies.</p>
                         <p>Notable composers: Mozart, Beethoven, and Haydn.</p>
                     </div>
-                </div>
+                
             </div>
         
             <!-- Romantic Music (1820s-1900s) -->
             <div class="mb-3">
-                <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#romanticMusic" 
-                    aria-expanded="false" aria-controls="romanticMusic">
+              <a class="btn btn-info" >
                     Romantic Music (1820s-1900s)
-                </button>
-                <div class="collapse mt-2" id="romanticMusic">
+            </a>
+              
                     <div class="card card-body">
                         <p>Focused on emotional expression and dramatic themes.</p>
                         <p>Major composers: Chopin, Tchaikovsky, and Brahms.</p>
                     </div>
-                </div>
+                
             </div>
         
             <!-- 20th Century & Modern Music -->
             <div class="mb-3">
-                <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#modernMusic" 
-                    aria-expanded="false" aria-controls="modernMusic">
+              <a class="btn btn-info" >
                     20th Century & Modern Music
-                </button>
-                <div class="collapse mt-2" id="modernMusic">
+              </a>
+              
                     <div class="card card-body">
                         <p>Experimentation with electronic sounds and diverse genres.</p>
                         <p>Jazz, rock, pop, and hip-hop emerged as dominant styles.</p>
-                    </div>
                 </div>
             </div>
         </div>
