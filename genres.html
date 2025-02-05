@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+   
+     <!-- 
+      Added Bootstrap
+     -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+   />
+
+  </head>
+  <body>
+ 
+    <!-- 
+     Header
+    -->
+    <header >
+       <nav class="navbar navbar-expand-lg bg-info bg-gradient bg-opacity-50">
+          <div class="container">
+            <a href="index.html" class="navbar-brand">SoundSphere</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="genres.html" >Genres</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="history.html" >History</a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+
+      </header>
+   
+      
+
+      <article class="card bg-info bg-gradient bg-opacity-25">
+        <div class="card-body text-center text-primary-emphasis">
+          <h2 class="card-title">Featured Genres</h2>
+          
+          <div class="row g-2">
+            <div class="col-6 col-md-3">
+              <div class="card border-0">
+                <img src="https://placehold.co/200x200?text=Rock" alt="Rock" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <a href="genres-detail.html?name=rock" class="link-dark link-underline-opacity-100-hover">Rock</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-6 col-md-3">
+              <div class="card border-0">
+                <img src="https://placehold.co/200x200?text=Jazz" alt="Jazz" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <a href="genres-detail.html?name=jazz" class="link-dark link-underline-opacity-100-hover">Jazz</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-6 col-md-3">
+              <div class="card border-0">
+                <img src="https://placehold.co/200x200?text=Pop" alt="Pop" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <a href="genres-detail.html?name=pop" class="link-dark link-underline-opacity-100-hover">Pop</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-6 col-md-3">
+              <div class="card border-0">
+                <img src="https://placehold.co/200x200?text=Classical" alt="Classical" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <a href="genres-detail.html?name=classical" class="link-dark link-underline-opacity-100-hover">Classical</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      
+
+
+  
+      </main>
+
+
+      <footer class="bg-info bg-gradient bg-opacity-50 text-center py-3 container-fluid">
+        <p>&copy; 2025 SoundSphere</p>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>
