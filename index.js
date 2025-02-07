@@ -44,6 +44,7 @@ const createGenre = (name, title,introduction, keyCharacteristics, notableArtist
 //  ===========================================================================
 const display = (genre) => {
     document.getElementById('genres-detail-display').innerHTML = `
+    <div class = 'card '>
     <h2 class="card-title card-header text-bg-info ">${genre.title}</h2>
     <ul class="list-group list-group-flush">
     <li class="list-group-item">
@@ -59,6 +60,7 @@ const display = (genre) => {
       <strong>Influence: </strong>${genre.influence}
     </li>
   </ul>
+  </div>
     `;
   
 }
